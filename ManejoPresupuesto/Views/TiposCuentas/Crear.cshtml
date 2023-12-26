@@ -11,7 +11,11 @@
     Ejemplos: Prestamos, tarjetas de credito, etc.
 </h5>
 
-<form asp-asp-controller="TiposCuentas" asp-action="Crear">
+<div asp-validation-summary="All" class="text-danger">
+
+</div>
+
+<form asp-controller="TiposCuentas" asp-action="Crear">
     <div class="mb-3">
         <label for="Nombre" class="form-label">Nombre</label>
         <input type="text" id="Nombre" name="Nombre" class="form-control" />
